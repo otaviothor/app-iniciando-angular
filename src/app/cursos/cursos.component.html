@@ -1,3 +1,10 @@
-<p>cursos works!</p>
+<p>
+  lista de cursos do portal
+  <a [href]="portalName" target="_blank">{{ portalName }}</a>
+</p>
+
+<ul>
+  <li *ngFor="let courses of courses">{{ courses }}</li>
+</ul>
 
 <app-cursos-detalhe></app-cursos-detalhe>
