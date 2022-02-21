@@ -13,4 +13,60 @@
     <img bind-src="imageUrl" />
     <img src="{{ imageUrl }}" />
   </article>
+
+  <hr />
+
+  <article>
+    <h3>Class e style binding</h3>
+    <div>
+      <select #class (change)="(0)">
+        <option value="alert-success">alert-success</option>
+        <option value="alert-info">alert-info</option>
+        <option value="alert-warning">alert-warning</option>
+        <option value="alert-danger">alert-danger</option>
+      </select>
+    </div>
+
+    <div class="alert {{ class.value }}" role="alert">{{ class.value }}</div>
+
+    <div
+      class="alert"
+      [class.alert-success]="class.value === 'alert-success'"
+      role="alert"
+    >
+      alert-success
+    </div>
+
+    <div
+      class="alert"
+      [class.alert-info]="class.value === 'alert-info'"
+      role="alert"
+    >
+      alert-info
+    </div>
+
+    <div
+      class="alert"
+      [class.alert-warning]="class.value === 'alert-warning'"
+      role="alert"
+    >
+      alert-warning
+    </div>
+
+    <div
+      class="alert"
+      [class.alert-danger]="class.value === 'alert-danger'"
+      role="alert"
+    >
+      alert-danger
+    </div>
+
+    <div
+      class="alert alert-danger"
+      [style.display]="class.value === 'alert-danger' ? 'block' : 'none'"
+      role="alert"
+    >
+      alert-danger
+    </div>
+  </article>
 </section>
