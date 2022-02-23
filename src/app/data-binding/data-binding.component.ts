@@ -12,6 +12,11 @@ export class DataBindingComponent implements OnInit {
   public inputValue: string = '';
   public savedValue: string = '';
   public isMouseOver: boolean = false;
+  public inputName: string = 'ABC';
+  public person: { name: string; age: number } = {
+    name: 'def',
+    age: 20,
+  };
 
   constructor() {
     this.url = 'https://loiane.training';
