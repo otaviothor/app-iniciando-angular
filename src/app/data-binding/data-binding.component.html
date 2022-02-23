@@ -69,4 +69,40 @@
       alert-danger
     </div>
   </article>
+
+  <hr />
+
+  <article>
+    <h3>Event binding</h3>
+    <div>
+      <button class="btn btn-primary" (click)="handleClickButton()">
+        Click
+      </button>
+      <!-- caso eu nao declare a variavel no elemento, eu uso o $event -->
+      <!-- <input
+        type="text"
+        (keyup)="onKeyUp($event)"
+        (keyup.enter)="saveValue($event.target)"
+        (blur)="saveValue($event.target)"
+      /> -->
+      <!-- caso declare uma variavel no elemento, posso passar ela nos events bindings -->
+      <input
+        type="text"
+        (keyup)="onKeyUp(input)"
+        (keyup.enter)="saveValue(input)"
+        (blur)="saveValue(input)"
+        #input
+      />
+      <p>Valor atual: {{ inputValue }}</p>
+      <p>Valor salve: {{ savedValue }}</p>
+
+      <p
+        (mouseover)="onMouseOver()"
+        (mouseout)="onMouseOut()"
+        [class.highlight]="isMouseOver"
+      >
+        Passe o mouse sobre mim
+      </p>
+    </div>
+  </article>
 </section>

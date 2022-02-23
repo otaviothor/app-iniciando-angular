@@ -9,6 +9,9 @@ export class DataBindingComponent implements OnInit {
   public url: string = '';
   public angularCourse: boolean = true;
   public imageUrl: string = '';
+  public inputValue: string = '';
+  public savedValue: string = '';
+  public isMouseOver: boolean = false;
 
   constructor() {
     this.url = 'https://loiane.training';
@@ -23,5 +26,25 @@ export class DataBindingComponent implements OnInit {
 
   getCourseLike(): boolean {
     return true;
+  }
+
+  handleClickButton(): void {
+    alert('ok');
+  }
+
+  onKeyUp(target: HTMLInputElement): void {
+    this.inputValue = target.value;
+  }
+
+  saveValue(target: HTMLInputElement): void {
+    this.savedValue = target.value;
+  }
+
+  onMouseOver(): void {
+    this.isMouseOver = !this.isMouseOver;
+  }
+
+  onMouseOut(): void {
+    this.isMouseOver = !this.isMouseOver;
   }
 }
