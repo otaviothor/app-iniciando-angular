@@ -1,1 +1,27 @@
-<p>meu-form works!</p>
+<article class="two-way-binding">
+  <h3>Two-way data binding</h3>
+  <div>
+    <!-- dessa forma, o set e get ficam separados -->
+    <!-- <input
+        type="text"
+        [value]="inputName"
+        (input)="inputName = $event.target.value"
+        /> -->
+
+    <!-- dessa forma, o set e get ainda ficam separados, porem com ng props -->
+    <!-- <input type="text"
+        [ngModel]="inputName"
+        (ngModelChange)="inputName = $event"
+      /> -->
+
+    <!-- dessa forma, e utilizado o two-way data binding -->
+    <input type="text" [(ngModel)]="inputName" />
+
+    <p>Você digitou: {{ inputName }}</p>
+  </div>
+  <div>
+    <p>Meu nome é {{ person.name }} e tenho {{ person.age }} anos</p>
+    <input type="text" [(ngModel)]="person.name" />
+    <input type="number" [(ngModel)]="person.age" />
+  </div>
+</article>
