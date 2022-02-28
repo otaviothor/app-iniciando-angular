@@ -12,10 +12,12 @@ export class DataBindingComponent implements OnInit {
   public inputValue: string = '';
   public savedValue: string = '';
   public isMouseOver: boolean = false;
+  public courseName: string = '';
 
   constructor() {
     this.url = 'https://loiane.training';
     this.imageUrl = 'http://lorempixel.com.br/400/200';
+    this.courseName = 'Angular';
   }
 
   ngOnInit(): void {}
