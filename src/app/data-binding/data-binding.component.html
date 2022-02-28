@@ -118,5 +118,6 @@
     <h3>Input/Output Properties</h3>
 
     <app-curso [courseName]="courseName"></app-curso>
+    <app-counter [value]="10" (changedValue)="onChangedValue($event)"></app-counter>
   </article>
 </section>
