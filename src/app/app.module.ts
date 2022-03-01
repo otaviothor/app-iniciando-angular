@@ -10,6 +10,8 @@ import { MeuFormModule } from './meu-form/meu-form.module';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { AppRoutingModule } from './app-routing.module';
+import { FirstClassesComponent } from './first-classes/first-classes.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +21,15 @@ import { LifeCycleComponent } from './life-cycle/life-cycle.component';
     InputPropertyComponent,
     OutputPropertyComponent,
     LifeCycleComponent,
+    FirstClassesComponent,
   ],
-  imports: [BrowserModule, CursosModule, FormsModule, MeuFormModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CursosModule,
+    FormsModule,
+    MeuFormModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

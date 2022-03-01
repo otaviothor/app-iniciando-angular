@@ -1,16 +1,1 @@
-<app-primeiro-component></app-primeiro-component>
-
-<app-cursos></app-cursos>
-
-<hr />
-
-<app-data-binding></app-data-binding>
-
-<hr />
-
-<app-life-cycle
-  [initialValue]="initialValue"
-  *ngIf="!deleteCycle"
-></app-life-cycle>
-<button (click)="handleChangeValue()">Change value</button>
-<button (click)="handleDestroyCycle()">Destroy</button>
+<router-outlet></router-outlet>
