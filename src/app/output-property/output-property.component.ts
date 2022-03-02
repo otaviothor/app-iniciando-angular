@@ -3,7 +3,6 @@ import {
   ElementRef,
   EventEmitter,
   Input,
-  OnInit,
   Output,
   ViewChild,
 } from '@angular/core';
@@ -13,7 +12,7 @@ import {
   templateUrl: './output-property.component.html',
   styleUrls: ['./output-property.component.scss'],
 })
-export class OutputPropertyComponent implements OnInit {
+export class OutputPropertyComponent {
   @Input() public value: number = 0;
   @Output() public changedValue: EventEmitter<any> = new EventEmitter();
 
@@ -21,8 +20,6 @@ export class OutputPropertyComponent implements OnInit {
     {} as ElementRef;
 
   constructor() {}
-
-  ngOnInit(): void {}
 
   public handleIncrement(): void {
     console.log(this.inputFieldValue.nativeElement.value);

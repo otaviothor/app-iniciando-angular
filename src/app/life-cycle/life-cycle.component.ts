@@ -20,7 +20,6 @@ import {
 export class LifeCycleComponent
   implements
     OnInit,
-    DoCheck,
     AfterViewInit,
     OnChanges,
     AfterContentChecked,
@@ -34,9 +33,9 @@ export class LifeCycleComponent
     console.log('constructor');
   }
 
-  ngDoCheck(): void {
-    console.log('ngDoCheck');
-  }
+  // ngDoCheck(): void {
+  //   console.log('ngDoCheck');
+  // }
 
   ngAfterViewInit(): void {
     console.log('ngAfterViewInit');

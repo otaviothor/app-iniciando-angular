@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
   styleUrls: ['./data-binding.component.scss'],
 })
-export class DataBindingComponent implements OnInit {
+export class DataBindingComponent {
   public url: string = '';
   public angularCourse: boolean = true;
   public imageUrl: string = '';
@@ -19,8 +19,6 @@ export class DataBindingComponent implements OnInit {
     this.imageUrl = 'http://lorempixel.com.br/400/200';
     this.courseName = 'Angular';
   }
-
-  ngOnInit(): void {}
 
   getValue(): number {
     return 1;

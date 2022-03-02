@@ -1,14 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-first-classes',
   templateUrl: './first-classes.component.html',
   styleUrls: ['./first-classes.component.scss'],
 })
-export class FirstClassesComponent implements OnInit {
+export class FirstClassesComponent {
   constructor() {}
-
-  ngOnInit(): void {}
 
   title = 'curso-angular';
   public initialValue: number = 10;
