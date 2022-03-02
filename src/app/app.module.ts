@@ -12,6 +12,8 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FirstClassesComponent } from './first-classes/first-classes.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { FirstClassesComponent } from './first-classes/first-classes.component';
     OutputPropertyComponent,
     LifeCycleComponent,
     FirstClassesComponent,
+    NavbarComponent,
+    DirectivesComponent,
   ],
   imports: [
     BrowserModule,
