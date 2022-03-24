@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './first-classes/navbar/navbar.component';
 import { DirectivesComponent } from './first-classes/directives/directives.component';
 import { FirstClassesComponent } from './first-classes/first-classes.component';
+import { NgifComponent } from './directives/ngif/ngif.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FirstClassesComponent } from './first-classes/first-classes.component';
     FirstClassesComponent,
     NavbarComponent,
     DirectivesComponent,
+    NgifComponent,
   ],
   imports: [
     BrowserModule,
