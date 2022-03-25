@@ -16,6 +16,7 @@ import { DirectivesComponent } from './first-classes/directives/directives.compo
 import { FirstClassesComponent } from './first-classes/first-classes.component';
 import { NgifComponent } from './directives/ngif/ngif.component';
 import { DirectivesComponent as DirectiveComponent } from './directives/directives.component';
+import { NgswitchComponent } from './directives/ngswitch/ngswitch.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { DirectivesComponent as DirectiveComponent } from './directives/directiv
     DirectivesComponent,
     NgifComponent,
     DirectiveComponent,
+    NgswitchComponent,
   ],
   imports: [
     BrowserModule,
