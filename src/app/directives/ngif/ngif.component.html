@@ -1,1 +1,9 @@
-<p>ngif works!</p>
+<h5>*ngIf</h5>
+
+<div *ngIf="showCourses; else elseCourses">lista de cursos</div>
+
+<ng-template #elseCourses>
+  <div>não existem cursos para serem listados</div>
+</ng-template>
+
+<button (click)="handleToggleCourses()">Toggle courses</button>

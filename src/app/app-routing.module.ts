@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DirectivesComponent } from './directives/directives.component';
 import { FirstClassesComponent } from './first-classes/first-classes.component';
 
 const routes: Routes = [
@@ -8,8 +9,8 @@ const routes: Routes = [
     component: FirstClassesComponent,
   },
   {
-    path: 'other-classes',
-    component: FirstClassesComponent,
+    path: 'directives',
+    component: DirectivesComponent,
   },
 ];
 

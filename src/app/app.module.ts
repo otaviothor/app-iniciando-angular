@@ -11,10 +11,11 @@ import { InputPropertyComponent } from './first-classes/input-property/input-pro
 import { OutputPropertyComponent } from './first-classes/output-property/output-property.component';
 import { LifeCycleComponent } from './first-classes/life-cycle/life-cycle.component';
 import { AppRoutingModule } from './app-routing.module';
-import { NavbarComponent } from './first-classes/navbar/navbar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { DirectivesComponent } from './first-classes/directives/directives.component';
 import { FirstClassesComponent } from './first-classes/first-classes.component';
 import { NgifComponent } from './directives/ngif/ngif.component';
+import { DirectivesComponent as DirectiveComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { NgifComponent } from './directives/ngif/ngif.component';
     NavbarComponent,
     DirectivesComponent,
     NgifComponent,
+    DirectiveComponent,
   ],
   imports: [
     BrowserModule,
