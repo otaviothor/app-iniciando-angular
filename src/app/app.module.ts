@@ -20,6 +20,7 @@ import { NgswitchComponent } from './directives/ngswitch/ngswitch.component';
 import { NgforComponent } from './directives/ngfor/ngfor.component';
 import { NgclassComponent } from './directives/ngclass/ngclass.component';
 import { NgstyleComponent } from './directives/ngstyle/ngstyle.component';
+import { ElvisOperatorComponent } from './directives/elvis-operator/elvis-operator.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { NgstyleComponent } from './directives/ngstyle/ngstyle.component';
     NgforComponent,
     NgclassComponent,
     NgstyleComponent,
+    ElvisOperatorComponent,
   ],
   imports: [
     BrowserModule,
