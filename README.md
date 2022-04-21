@@ -4,20 +4,19 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Tecnologia 1](https://github.com)
-- [Tecnologia 2](https://github.com)
+- [Angular](https://angular.io/)
 
 ## 💻 Projeto
 
-O projeto é uma ...
+O projeto é resultado do estudo desse framework de desenvolvimento web realizado através do [Curso de Angular](https://www.youtube.com/playlist?list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G) ministrado pela [Loiane Groner](https://www.youtube.com/c/loianegroner), com intuito adquirir mais conhecimento desse framework web
 
 ## 🚀 Como executar
 
 - Clone o repositório
-- Instale as dependências com `comando`
-- Inicie o servidor com `comando`
+- Instale as dependências com `npm install`
+- Inicie o servidor com `npm start`
 
-Agora você pode fazer as requisições que estão no arquivo [`request.http`](request.http).
+Agora você pode acessar o [`localhost:4200`](http://localhost:4200) do seu navegador
 
 ## 📄 Licença
 
