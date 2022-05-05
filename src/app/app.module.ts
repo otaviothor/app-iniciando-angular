@@ -21,6 +21,7 @@ import { NgforComponent } from './directives/ngfor/ngfor.component';
 import { NgclassComponent } from './directives/ngclass/ngclass.component';
 import { NgstyleComponent } from './directives/ngstyle/ngstyle.component';
 import { ElvisOperatorComponent } from './directives/elvis-operator/elvis-operator.component';
+import { NgContentComponent } from './directives/ng-content/ng-content.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ElvisOperatorComponent } from './directives/elvis-operator/elvis-operat
     NgclassComponent,
     NgstyleComponent,
     ElvisOperatorComponent,
+    NgContentComponent,
   ],
   imports: [
     BrowserModule,
