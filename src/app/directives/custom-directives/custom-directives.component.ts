@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./custom-directives.component.scss'],
 })
 export class CustomDirectivesComponent {
+  showCourses: boolean = false;
+
   constructor() {}
+
+  public handleToggleCourses(): void {
+    this.showCourses = !this.showCourses;
+  }
 }

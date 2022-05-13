@@ -11,3 +11,13 @@
 <p [appHighlight]="'blue'" [defaultColor]="'green'">
   texto com highlight com custom colors
 </p>
+
+<hr />
+
+<h5>*ngElse</h5>
+
+<div *ngIf="showCourses">lista de cursos</div>
+
+<div *ngElse="showCourses">não existem cursos para serem listados</div>
+
+<button (click)="handleToggleCourses()">Toggle courses</button>
