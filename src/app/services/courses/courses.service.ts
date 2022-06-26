@@ -4,7 +4,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class CoursesService {
-  constructor() {}
+  constructor() {
+    console.log('coursesService');
+  }
 
   getCourses(): string[] {
     return ['Java', 'Angular', 'React'];
