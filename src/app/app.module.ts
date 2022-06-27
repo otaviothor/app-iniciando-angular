@@ -30,6 +30,7 @@ import { HighlightMouseDirective } from './shared/directives/highlight-mouse.dir
 import { HighlightDirective } from './shared/directives/highlight.directive';
 import { NgElseDirective } from './shared/directives/ng-else.directive';
 import { YellowBackgroundDirective } from './shared/directives/yellow-background.directive';
+import { LogService } from './services/log/log.service';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,7 @@ import { YellowBackgroundDirective } from './shared/directives/yellow-background
     CreateCourseModule,
     CoursesModule,
   ],
-  providers: [],
+  providers: [LogService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
