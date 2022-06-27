@@ -1,5 +1,7 @@
-<h2>lista de cursos</h2>
+<h2>courses list</h2>
 
 <ul>
   <li *ngFor="let course of courses">{{ course }}</li>
 </ul>
+
+<p *ngIf="course">last created course: {{ course }}</p>

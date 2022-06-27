@@ -8,10 +8,17 @@ import { CoursesService } from 'src/app/services/courses/courses.service';
 })
 export class CoursesComponent implements OnInit {
   public courses: string[] = [];
+  public course: string = '';
 
   constructor(private readonly coursesService: CoursesService) {}
 
   ngOnInit() {
     this.courses = this.coursesService.getCourses();
+
+    CoursesService.emitCreatedCourseWithMoreThanOneInstances.subscribe(
+      (data) => {
+        this.course = data;
+      }
+    );
   }
 }
