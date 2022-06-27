@@ -31,6 +31,7 @@ import { HighlightDirective } from './shared/directives/highlight.directive';
 import { NgElseDirective } from './shared/directives/ng-else.directive';
 import { YellowBackgroundDirective } from './shared/directives/yellow-background.directive';
 import { LogService } from './services/log/log.service';
+import { PipesComponent } from './services-classes/pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { LogService } from './services/log/log.service';
     HighlightDirective,
     NgElseDirective,
     ServicesClassesComponent,
+    PipesComponent,
   ],
   imports: [
     BrowserModule,
