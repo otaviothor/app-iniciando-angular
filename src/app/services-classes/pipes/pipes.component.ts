@@ -5,9 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './pipes.component.html',
   styleUrls: ['./pipes.component.scss'],
 })
-export class PipesComponent implements OnInit {
+export class PipesComponent {
   public book: any = {
-    title: 'lorem ipsum',
+    title: 'lorem ipsum dolor sit amet consectetur adipisicing elit',
     rating: 4.1261,
     pagesNumber: 300,
     price: 44.99,
@@ -16,6 +16,4 @@ export class PipesComponent implements OnInit {
   };
 
   constructor() {}
-
-  ngOnInit(): void {}
 }

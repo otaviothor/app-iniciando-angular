@@ -8,3 +8,5 @@
 <p>price: {{ book.price | currency: "BRL" }}</p>
 <p>releaseDate: {{ book.releaseDate | date: "dd-MM-yyyy" }}</p>
 <p>url: {{ book.url }}</p>
+
+<p>title: {{ book.title | camelCase }}</p>

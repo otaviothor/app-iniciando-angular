@@ -32,6 +32,7 @@ import { NgElseDirective } from './shared/directives/ng-else.directive';
 import { YellowBackgroundDirective } from './shared/directives/yellow-background.directive';
 import { LogService } from './services/log/log.service';
 import { PipesComponent } from './services-classes/pipes/pipes.component';
+import { CamelCasePipe } from './pipes/camel-case.pipe';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { PipesComponent } from './services-classes/pipes/pipes.component';
     NgElseDirective,
     ServicesClassesComponent,
     PipesComponent,
+    CamelCasePipe,
   ],
   imports: [
     BrowserModule,
